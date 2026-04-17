@@ -1,110 +1,118 @@
-/* 🔹 BASIC */
-body {
-    font-family: sans-serif;
-}
-
-/* 🔹 TEXT */
-h1 {
-    color: red;
-}
-
-p {
-    font-size: 18px;
-}
-
-/* 🔹 BLOCK vs INLINE */
-.block {
-    background: lightblue;
-}
-
-.inline {
-    background: yellow;
-}
-
-/* 🔹 BOX MODEL */
-.box {
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-}
-
-/* 🔹 DISPLAY TYPES */
-.display-block {
-    display: block;
-    background: lightgreen;
-}
-
-.display-inline {
-    display: inline;
-    background: pink;
-}
-
-.display-inline-block {
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    background: orange;
-}
-
-/* 🔹 FLEX */
-.flex-container {
-    display: flex;
-    justify-content: space-around; /* poziomo */
-    align-items: center;          /* pionowo */
-    height: 100px;
-    border: 2px solid black;
-}
-
-.flex-container div {
-    background: lightblue;
-    padding: 10px;
-}
-
-/* 🔹 GRID */
-.grid-container {
+.layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.grid-container div {
-    background: lightcoral;
-    padding: 20px;
+
+
+.layout-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
-/* 🔹 POSITION */
-.position-parent {
-    position: relative;
-    height: 150px;
+.layout-item {
+    background: orange;
+    padding: 10px;
+}
+
+
+.card-size {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+
+    /* 🔥 kluczowe */
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.item {
+    background: lightgreen;
+    margin: 10px;
+}
+
+/* 🔹 BLOCK */
+.item-block {
+    display: block;
+}
+
+/* 🔹 INLINE */
+.item-inline {
+    display: inline;
+}
+
+/* 🔹 INLINE-BLOCK */
+.item-inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+
+
+
+.container {
+    position: relative; /* ważne dla absolute */
+    height: 200px;
     border: 2px solid black;
 }
 
-.absolute-box {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: yellow;
+.box {
+    width: 100px;
+    height: 50px;
+    background: lightcoral;
+    margin: 10px;
 }
 
-.fixed-box {
+/* 🔹 STATIC */
+.box-static {
+    position: static;
+    /* ignoruje top/left */
+}
+
+/* 🔹 RELATIVE */
+.box-relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+/* 🔹 ABSOLUTE */
+.box-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 🔹 FIXED */
+.box-fixed {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: red;
-    color: white;
 }
 
-/* 🔹 FLOAT (old school) */
-.float-box {
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: purple;
+
+.card {
+    background: lightblue;
+    border: 2px solid black;
 }
 
-/* 🔹 MEDIA QUERY */
-@media (max-width: 600px) {
-    body {
-        background: lightgray;
-    }
+/* 🔹 padding */
+.card-padding {
+    padding: 20px;
+}
+
+/* 🔹 margin */
+.card-margin {
+    margin: 20px;
 }
