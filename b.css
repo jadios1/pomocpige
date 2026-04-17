@@ -1,0 +1,110 @@
+/* 🔹 BASIC */
+body {
+    font-family: sans-serif;
+}
+
+/* 🔹 TEXT */
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* 🔹 BLOCK vs INLINE */
+.block {
+    background: lightblue;
+}
+
+.inline {
+    background: yellow;
+}
+
+/* 🔹 BOX MODEL */
+.box {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* 🔹 DISPLAY TYPES */
+.display-block {
+    display: block;
+    background: lightgreen;
+}
+
+.display-inline {
+    display: inline;
+    background: pink;
+}
+
+.display-inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: orange;
+}
+
+/* 🔹 FLEX */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* poziomo */
+    align-items: center;          /* pionowo */
+    height: 100px;
+    border: 2px solid black;
+}
+
+.flex-container div {
+    background: lightblue;
+    padding: 10px;
+}
+
+/* 🔹 GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-container div {
+    background: lightcoral;
+    padding: 20px;
+}
+
+/* 🔹 POSITION */
+.position-parent {
+    position: relative;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: yellow;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+}
+
+/* 🔹 FLOAT (old school) */
+.float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+
+/* 🔹 MEDIA QUERY */
+@media (max-width: 600px) {
+    body {
+        background: lightgray;
+    }
+}
